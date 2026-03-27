@@ -6,7 +6,10 @@ import { test, expect } from "@playwright/test";
 // Verify that the application loads correctly in the browser.
 // =========================================================
 
-test("search form is visible on page load", async ({ page }) => {});
+test("search form is visible on page load", async ({ page }) => {
+  await page.goto("http://localhost:5173");
+  await expect(page.locator("#search-form")).toBeVisible();
+});
 
 // =========================================================
 // VG – Additional E2E tests (write at least 2)
