@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filmsök</title>
+    <link rel="stylesheet" href="src/css/style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Filmsök</h1>
+
+      <form id="search-form">
+        <div class="search-row">
+          <input type="text" id="search-input" placeholder="Sök efter titel…" />
+          <button type="submit">Sök</button>
+        </div>
+
+        <div class="filter-row">
+          <label>Typ: </label>
+          <select id="type-filter">
+            <option value="">Alla</option>
+            <option value="movie">Film</option>
+            <option value="series">Serie</option>
+            <option value="episode">Avsnitt</option>
+          </select>
+         
+
+          <label>År:</label>
+          <input type="number" id="year-filter" min="1900" max="2099" placeholder="t.ex. 2020" />
+        </div>
+      </form>
+
+      <p id="result-info" class="result-info"></p>
+      <div id="movie-list" class="movie-grid"></div>
+    </main>
+
+    <script type="module" src="src/main-search.js"></script>
+  </body>
+</html>
