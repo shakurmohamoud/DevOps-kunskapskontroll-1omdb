@@ -1,6 +1,6 @@
 # Filmsök
 
-![CI](https://github.com/shakurmohamoud/DevOps-kunskapskontroll-1omdb/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/shakurmohamoud/movie-search-ci/actions/workflows/ci.yml/badge.svg)
 
 Movie search against the OMDb API. Search by title and narrow the
 result with filters for type and year.
