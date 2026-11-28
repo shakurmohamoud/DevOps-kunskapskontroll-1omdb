@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 260" width="180" height="260" role="img" aria-label="Ingen bild">
+  <rect width="180" height="260" fill="#0f3460"/>
+  <g stroke="#4a6fa5" stroke-width="2" fill="none" stroke-linejoin="round">
+    <rect x="56" y="98" width="68" height="52" rx="5"/>
+    <path d="M60 142 l20-20 14 13 12-10 18 17"/>
+  </g>
+  <circle cx="76" cy="116" r="6" fill="#4a6fa5"/>
+  <text x="90" y="178" font-family="-apple-system, system-ui, sans-serif" font-size="13" fill="#8da2c0" text-anchor="middle">Ingen bild</text>
+</svg>

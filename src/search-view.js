@@ -17,8 +17,14 @@ export function renderMovies(movies) {
     div.className = "movie-card";
 
     let img = document.createElement("img");
-    img.src = movie.Poster !== "N/A" ? movie.Poster : "https://via.placeholder.com/180x260?text=Ingen+bild";
+    img.src = movie.Poster !== "N/A" ? movie.Poster : "/no-poster.svg";
     img.alt = movie.Title;
+
+    // visar reservbilden om affischen inte laddar
+    img.onerror = () => {
+      img.onerror = null;
+      img.src = "/no-poster.svg";
+    };
 
     let info = document.createElement("div");
     info.className = "info";
