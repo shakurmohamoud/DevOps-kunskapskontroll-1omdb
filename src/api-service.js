@@ -1,4 +1,4 @@
-const API_KEY = "trilogy";
+const API_KEY = import.meta.env.VITE_OMDB_API_KEY;
 const BASE_URL = "https://www.omdbapi.com";
 
 export async function searchMovies(query, type, year) {
@@ -23,4 +23,3 @@ export async function fetchMovieDetails(imdbId) {
   if (!res.ok) throw new Error("Nätverksfel vid hämtning av detaljer");
   return await res.json();
 }
-
